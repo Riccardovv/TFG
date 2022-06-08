@@ -13,7 +13,7 @@ class DB {
     
     private $host="localhost";
     private $user="root";
-    private $clave="";
+    private $clave="V8TOr5jNrBILwfbK";
     
     //Definimos la propidad de la base de datos a conectar
     
