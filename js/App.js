@@ -29,7 +29,7 @@ function init(user) {
 
 function getProfile(handler){
         
-    fetch('http://localhost/php/getSessionId.php', {
+    fetch('php/getSessionId.php', {
         method: 'get',
         }).then(function(response) {  
         return response.json();

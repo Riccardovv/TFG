@@ -1,13 +1,13 @@
 function getOffers(handler) {
   let comps=[];
   let cats=[];
-  fetch('http://localhost/php/getCompanies.php', {
+  fetch('/php/getCompanies.php', {
         method: 'get',
         }).then(function(response) {  
           return response.json();
         }).then(function (companies) {
           comps.push(companies)
-          fetch('http://localhost/php/getCategories.php', {
+          fetch('php/getCategories.php', {
             method: 'get',
             }).then(function(response) {
               return response.json()
@@ -22,7 +22,7 @@ function getOffers(handler) {
 
 
 function getCategories(handler) {
-    fetch('http://localhost/php/getCategories.php', {
+    fetch('php/getCategories.php', {
         method: 'get',
         }).then(function(response) {  
         return response.json();
@@ -33,7 +33,7 @@ function getCategories(handler) {
 
 
 function getCompanies(handler) {
-    fetch('http://localhost/php/getCompanies.php', {
+    fetch('php/getCompanies.php', {
         method: 'get',
         }).then(function(response) {  
         return response.json();
@@ -44,7 +44,7 @@ function getCompanies(handler) {
 
 
 function getUsers(handler) {
-    fetch('http://localhost/php/getUsers.php', {
+    fetch('php/getUsers.php', {
         method: 'get',
         }).then(function(response) {  
         return response.json();
@@ -54,7 +54,7 @@ function getUsers(handler) {
 }
 
 function getOffersDelete(handler) {
-    fetch('http://localhost/php/loadOffers.php', {
+    fetch('/php/loadOffers.php', {
         method: 'get',
         }).then(function(response) {  
         return response.json();

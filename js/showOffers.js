@@ -10,7 +10,7 @@ function addOffer(companies, categories) {
     console.log(categories);
     $('#content').empty();
     $('#main').empty()
-    $('#content').append(`<form name="fNewOffer" role="form" id="fNewOffer"  class="container" action="http://localhost/php/addOffer.php" method="post" ">
+    $('#content').append(`<form name="fNewOffer" role="form" id="fNewOffer"  class="container" action="php/addOffer.php" method="post" ">
       <div class="form-row">
         <div class="col-md-6 mb-3">
           <label for="nName">Nombre *</label>
@@ -87,7 +87,7 @@ function addCompany() {
     $('#content').empty();
     $('#main').empty()
     $('#content').append(`
-    <form name="newCompany" role="form" id="newCompany"  class="container" method="post" action="http://localhost/php/addCompany.php">
+    <form name="newCompany" role="form" id="newCompany"  class="container" method="post" action="php/addCompany.php">
       
 
       <div class="form-row">
@@ -112,7 +112,7 @@ function addCompany() {
 }
 function addCategoy() {$('#content').empty();
 $('#main').empty()
-$('#content').append(`<form name="fNewProduct" role="form" id="fNewProduct" class="container" method="post" action="http://localhost/php/addCategory.php">
+$('#content').append(`<form name="fNewProduct" role="form" id="fNewProduct" class="container" method="post" action="php/addCategory.php">
   
 
   <div class="form-row">

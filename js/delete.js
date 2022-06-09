@@ -66,7 +66,7 @@ function deleteUsers(users){
         </div>
         
         <div class="card-body">
-        <form name="fNewOffer" role="form" id="fNewOffer"  class="container" action="http://localhost/php/delete/deleteUser.php" method="post" ">
+        <form name="fNewOffer" role="form" id="fNewOffer"  class="container" action="php/delete/deleteUser.php" method="post" ">
         <input type="hidden" name="id" id="id" value="${u.id}">
         <input type="submit" class="btn btn-danger">
         <form>
@@ -92,7 +92,7 @@ function deleteCategory(categories){
         </div>
         
         <div class="card-body">
-        <form name="fNewOffer" role="form" id="fNewOffer"  class="container" action="http://localhost/php/delete/deleteCategory.php" method="post" ">
+        <form name="fNewOffer" role="form" id="fNewOffer"  class="container" action="php/delete/deleteCategory.php" method="post" ">
         <input type="hidden" name="id" id="id" value="${c.id}">
         <input type="submit" class="btn btn-danger">
         <form>
@@ -115,7 +115,7 @@ function deleteCompanies(companies){
         </div>
         
         <div class="card-body">
-        <form name="fNewOffer" role="form" id="fNewOffer"  class="container" action="http://localhost/php/delete/deleteCompany.php" method="post" ">
+        <form name="fNewOffer" role="form" id="fNewOffer"  class="container" action="php/delete/deleteCompany.php" method="post" ">
         <input type="hidden" name="id" id="id" value="${c.id}">
         <input type="submit" class="btn btn-danger">
         <form>
@@ -142,7 +142,7 @@ function deleteOffers(offers){
       <li class="list-group-item">${offer.id_company}</li>
     </ul>
     <div class="card-body">
-    <form name="fNewOffer" role="form" id="fNewOffer"  class="container" action="http://localhost/php/delete/deleteoffer.php" method="post" ">
+    <form name="fNewOffer" role="form" id="fNewOffer"  class="container" action=php/delete/deleteoffer.php" method="post" ">
     <input type="hidden" name="id" id="id" value="${offer.id}">
     <input type="submit" class="btn btn-danger">
     <form>
